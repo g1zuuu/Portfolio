@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Geady</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000;
+      --text: #fff;
+      --accent: #888;
+      --font-main: 'Inter', sans-serif;
+      --font-title: 'Playfair Display', serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      padding: 120px 2rem 4rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .projects, .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      transition: transform 0.3s, filter 0.3s;
+    }
+
+    .card img {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  height: 300px; 
+}
+
+    .card:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Highlights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Projects</h1>
+
+  <div class="projects">
+  <div class="card">
+    <img src="bookin.png" alt="BookIn App" />
+    <h3>BookIn App</h3>
+    <p>An intuitive booking system for sport casual plays, matches, services, and more — with smart calendar integration. </p>
+  </div>
+  <div class="card">
+    <img src="aniven.png" alt="AniVen App" />
+    <h3>AniVen App</h3>
+    <p>A movie streaming app featuring trending content, user ratings, and a clean dark interface. </p>
+  </div>
+  <div class="card">
+    <img src="ysl.png" alt="Yves Saint Laurent (YSL) App Redesign" />
+    <h3>Yves Saint Laurent (YSL) App Redesign</h3>
+    <p>A high-fashion app redesign for YSL, highlighting runway looks, exclusive drops, and a minimalist monochrome aesthetic.</p>
+  </div>
+  </div>
+
+    <div class="section-title"> <h2>Achievements</h2></div>
+    <div class="achievements">
+      <div class="card"> Honorable Mention (1st Place) - Mathematics, SAKAMOTO OPEN 2017 </div>
+      <div class="card"> Provincial Top 10 – EEC Mathematics Olympiad 2018</div>
+      <div class="card"> Bronze Medal - Mathematics, OMNAS 8 2018 </div>
+      <div class="card"> Bronze Medal - English, OMNAS 8 2018 </div>
+      <div class="card"> Bronze Award - Mathematics, HKIMO 2018 </div>
+      <div class="card"> Silver Medal - Science, OPSI 2021 </div>
+      <div class="card"> Bronze Medal - Science, OPSI 2021 </div>
+      <div class="card"> Bronze Medal - Biology, OPSI 2021 </div>
+      <div class="card"> Ranked 7th - PLAY IT JTI UI UX Hackathon  </div>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Geady</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #000;
+      --text: #fff;
+      --accent: #888;
+      --font-main: 'Inter', sans-serif;
+      --font-title: 'Playfair Display', serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      padding: 120px 2rem 4rem;
+      max-width: 700px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: var(--font-title);
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .icon-input {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #111;
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .icon-input i {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    .icon-input input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 1rem;
+      font-family: var(--font-main);
+    }
+
+    .icon-input input::placeholder {
+      color: var(--accent);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Highlights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contact Me</h1>
+
+    <div class="icon-input">
+      <i class="fab fa-discord"></i>
+      <input type="text" placeholder="dyyyyyyyyyy">
+    </div>
+
+    <div class="icon-input">
+      <i class="fab fa-linkedin"></i>
+      <input type="text" placeholder="Geady Phang">
+    </div>
+
+    <div class="icon-input">
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="ddydy6908@gmail.com">
+    </div>
+
+    <div class="icon-input">
+      <i class="fab fa-instagram"></i>
+      <input type="text" placeholder="g1zuuuuu">
+    </div>
+
+    <div class="icon-input">
+      <i class="fab fa-dribbble"></i>
+      <input type="text" placeholder="KAG1ZEUUU">
+    </div>
+  </div>
+</body>
+</html>
